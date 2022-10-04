@@ -1,0 +1,14 @@
+
+:root{
+	--Color:     red;
+	--ColorCopy: var(--Color);
+}
+
+.Text{
+	color:     var(--Color);
+	font-size: 3rem;
+}
+
+.Text.InnerScope{
+	--Color: var(--ColorCopy);
+}
